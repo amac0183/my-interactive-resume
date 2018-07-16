@@ -6,6 +6,24 @@ html, body {
     background-attachment: fixed;
 }
 
+body {
+  margin: 0px;
+
+  .sections-container {
+
+    div {
+      background: white;
+    }
+    /*div:nth-child(even) {
+      background: white;
+    }
+
+    div:nth-child(odd) {
+      background: gray;
+    }*/
+  }
+}
+
 h1 {
   font-family: Montserrat;
   font-size: 42pt;
@@ -24,3 +42,6 @@ h3 {
   font-size: 18pt;
   margin: 0px;
 }
+
+@import './sections/base_section.scss';
+@import './sections/cover.scss';
