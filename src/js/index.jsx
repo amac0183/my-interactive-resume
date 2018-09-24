@@ -16,8 +16,8 @@ const Index = () => {
       <Cover {...DATA.cover} />
       <div className='sections-container'>
         <ProfileSection />
-        <SkillsSection />
-        <ExperiencesSection />
+        <SkillsSection {...DATA.skills} />
+        <ExperiencesSection {...DATA.experiences} />
         <ContactSection />
       </div>
     </div>

@@ -12,38 +12,48 @@ export const DATA = {
         name: 'MySQL'
       }
     ],
-    languages: [
-      {
-        name: 'JavaScript'
-      },
-      {
-        name: 'SASS/CSS'
-      },
-      {
-        name:'C++'
-      }
-    ],
     javascriptLibraries: [
       {
-        name: 'React'
+        name: 'React',
+        level: 5
       },
       {
-        name: 'Redux/Redux Sagas'
+        name: 'Redux/Redux Sagas',
+        level: 5
       },
       {
-        name: 'Webpack 4'
+        name: 'Webpack 4',
+        level: 3
       },
       {
-        name: 'Express 4.x'
+        name: 'Express 4.x',
+        level: 4
       },
       {
-        name: 'Koa'
+        name: 'Koa',
+        level: 4
       },
       {
-        name: 'Babel'
+        name: 'Babel',
+        level: 4
       },
       {
-        name: 'Enzyme'
+        name: 'Enzyme',
+        level: 3
+      }
+    ],
+    languages: [
+      {
+        name: 'JavaScript',
+        level: 4
+      },
+      {
+        name: 'SASS/CSS',
+        level: 4
+      },
+      {
+        name:'C++',
+        level: 3
       }
     ],
     tools: [
