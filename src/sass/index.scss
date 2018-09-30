@@ -48,6 +48,13 @@ h4 {
   margin: 0px;
 }
 
+h5 {
+  font-family: Montserrat;
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0px;
+}
+
 p {
   font-family: Montserrat;
   font-size: 10pt;
@@ -61,5 +68,6 @@ p {
 }
 
 @import './sections/base_section.scss';
+@import './sections/experiences.scss';
 @import './sections/cover.scss';
 @import './sections/skills.scss';

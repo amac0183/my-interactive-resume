@@ -22,5 +22,8 @@ BaseSection.defaultProps = {
 };
 
 BaseSection.propTypes = {
-  children: PropTypes.array.isRequired
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
+  ]).isRequired
 };
