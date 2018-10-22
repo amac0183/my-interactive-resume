@@ -61,6 +61,11 @@ p {
   font-weight: light;
 }
 
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
 // #857b6b
 
 .disabled {
@@ -68,6 +73,7 @@ p {
 }
 
 @import './sections/base_section.scss';
+@import './sections/contact.scss';
 @import './sections/experiences.scss';
 @import './sections/cover.scss';
 @import './sections/skills.scss';

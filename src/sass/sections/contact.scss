@@ -1,0 +1,30 @@
+#contact {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+
+    .contact-entry-component {
+      $icon-font-size: 72pt;
+      
+      display: flex;
+      flex-direction: row;
+
+      .icon-container {
+        font-size: $icon-font-size;
+        width: 35px;
+
+        .material-icons {
+          font-size: $icon-font-size;
+        }
+      }
+
+      .id {
+        padding-left: 5px;
+      }
+    }
+  }
+}
