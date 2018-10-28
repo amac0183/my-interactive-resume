@@ -6,10 +6,12 @@ export const DATA = {
   skills: {
     databases: [
       {
-        name: 'GraphQL'
+        name: 'GraphQL - Queries only',
+        level: 3
       },
       {
-        name: 'MySQL'
+        name: 'MySQL',
+        level: 4
       }
     ],
     javascriptLibraries: [
@@ -58,16 +60,20 @@ export const DATA = {
     ],
     tools: [
       {
-        name: 'GitLab/Github'
+        name: 'GitLab/Github',
+        level: 4
       },
       {
-        name: 'Docker'
+        name: 'Docker',
+        level: 3
       },
       {
-        name: 'Kubernetes'
+        name: 'Kubernetes',
+        level: 2
       },
       {
-        name: 'Amazon Web Services'
+        name: 'Amazon Web Services',
+        level: 2
       }
     ]
   },
