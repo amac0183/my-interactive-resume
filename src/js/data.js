@@ -86,6 +86,34 @@ export const DATA = {
     ],
     work: [
       {
+        startDate: 20160101,
+        endDate: null,
+        company: 'LearnVest, Inc.',
+        location: 'New York, NY',
+        position: 'Senior Software Engineer',
+        projects: [
+          {
+            summary: 'In an agile team of 6, worked on the financial plan editor and generator, which allowed planners to customize a financial plan for a client and output it in PDF format',
+            details: [
+              'The editor UI is built using React, Redux, Sagas, and SASS.',
+              'The plan content is generated on both server and client side. It is built separately from the editor in React and SASS.',
+              'Server side was built with Koa and function generators to handle data fetches from multiple datapoints. Most of the data was fetched from a GraphQL or MongoDB server.',
+              'Coordinated with the product manager and the GraphQL team for the page business logic and generating GraphQL queries.',
+              'Worked with the designer to ensure the plan design matches the design provided',
+              'Handled generating a Docker container, managing the Kubernetes config file, and the build process in GitLab CI',
+              'Worked closely with QA for release and testing.'
+            ]
+          },
+          {
+            summary: 'Built a service that converted html to pdf or png format using Google Puppeteer and express. This is the service that outputs the plan to pdf format for the clients to receive.',
+            details: [
+              'Service took the url of the webpage to be outputted, as an argument through a GET request',
+              'Additional options supported including page size for pdf and quality'
+            ]
+          }
+        ]
+      },
+      {
         startDate: 20060101,
         endDate: 20150701,
         company: 'FactSet Research Systems, Inc.',
@@ -116,44 +144,12 @@ export const DATA = {
             ]
           }
         ]
-      },
-      {
-        startDate: 20160101,
-        endDate: null,
-        company: 'LearnVest, Inc.',
-        location: 'New York, NY',
-        position: 'Senior Software Engineer',
-        projects: [
-          {
-            summary: 'In an agile team of 6, worked on the financial plan editor and generator, which allowed planners to customize a financial plan for a client and output it in PDF format',
-            details: [
-              'The editor UI is built using React, Redux, Sagas, and SASS.',
-              'The plan content is generated on both server and client side. It is built separately from the editor in React and SASS.',
-              'Server side was built with Koa and function generators to handle data fetches from multiple datapoints. Most of the data was fetched from a GraphQL or MongoDB server.',
-              'Coordinated with the product manager and the GraphQL team for the page business logic and generating GraphQL queries.',
-              'Worked with the designer to ensure the plan design matches the design provided',
-              'Handled generating a Docker container, managing the Kubernetes config file, and the build process in GitLab CI',
-              'Worked closely with QA for release and testing.'
-            ]
-          },
-          {
-            summary: 'Built a service that converted html to pdf or png format using Google Puppeteer and express. This is the service that outputs the plan to pdf format for the clients to receive.',
-            details: [
-              'Service took the url of the webpage to be outputted, as an argument through a GET request',
-              'Additional options supported including page size for pdf and quality'
-            ]
-          }
-        ]
       }
     ]
   },
   profile: {
-    bio: '',
+    bio: 'I am a software engineer with experience in both front-end in JavaScript and back-end in C++. I am eager to continue learning new technologies. I have good communication skills and always ensuring that the whole team is on the same page. I highly value good collaboration and team work.',
     name: 'Andrew Hayakawa',
-    location: 'New York, NY',
-    social: {
-      linkedin: '',
-      twitter: ''
-    }
+    location: 'New York, NY'
   }
 }
