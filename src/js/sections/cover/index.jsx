@@ -27,8 +27,3 @@ Cover.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
 };
-
-/* <div className='container'>
-        <h1>{name}</h1>
-        <h3>{title}</h3>
-      </div> */
