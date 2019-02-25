@@ -8,6 +8,11 @@ import {MiddleContainer} from './components/middle_container';
 import {TitleContainer} from './components/title_container';
 import {TopContainer} from './components/top_container';
 
+/**
+ * Cover section component
+ * @param {string} name 
+ * @param {string} title 
+ */
 export const Cover = ({name, title}) => {
   return (
     <div id='cover'>

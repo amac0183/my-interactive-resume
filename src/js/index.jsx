@@ -10,6 +10,9 @@ import {ExperiencesSection} from './sections/experiences/index.jsx';
 import {ProfileSection} from './sections/profile/index.jsx';
 import {SkillsSection} from './sections/skills/index.jsx'; */
 
+/**
+ * Top level container component
+ */
 const Index = () => {
   return (
     <Background>
