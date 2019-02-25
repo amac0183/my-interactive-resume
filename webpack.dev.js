@@ -1,5 +1,6 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -7,33 +8,37 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
         use: [
           {
-            loader: "style-loader"
+            loader: 'babel-loader'
           },
           {
-            loader: "css-loader"
-          },
-          {
-            loader: "sass-loader"
+            loader: 'linaria/loader',
           }
         ]
       },
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
-      },
-      {
         test: /\.jpg$/,
         use: ['url-loader']
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'css-hot-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+          },
+        ],
       }
     ]
   },
   devServer: {
       port: 3000
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   }
 });
