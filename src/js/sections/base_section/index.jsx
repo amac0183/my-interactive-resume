@@ -1,18 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {styled} from 'linaria/react';
+import {H2} from '../../components/h2'
+import {Card} from './components/card'
+import {TitleContainer} from './components/title_container'
 
 export const BaseSection = ({children, title}) => {
   return (
     <div className='section'>
-      <div className='card'>
-        <div className='title'>
-          <h2>{title}</h2>
-          <hr />
-        </div>
+      <Card>
+        <TitleContainer>
+          <H2>{title}</H2><br />
+        </TitleContainer>
         <div className='content'>
           {children}
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
