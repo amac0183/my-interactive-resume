@@ -7,6 +7,6 @@ export const H2 = styled.h2`
   margin: 0px;
 
   @media (max-width: 500px) {
-    font-size: 13.53pt;
+    font-size: 20pt;
   }
 `;

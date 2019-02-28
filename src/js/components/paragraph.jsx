@@ -6,6 +6,6 @@ export const P = styled.p`
   font-weight: light;
 
   @media (max-width: 500px) {
-    font-size: 3.76pt;
+    font-size: 10pt;
   }
 `;
