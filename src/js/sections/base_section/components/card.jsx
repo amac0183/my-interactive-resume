@@ -4,7 +4,6 @@ export const Card = styled.div`
   background-color: white;
   margin: 0px;
   margin-top: 2rem;
-  min-width: 600px;
   min-height: 200px;
   padding-bottom: 3.75rem;
 
