@@ -10,8 +10,8 @@ export const EducationCard = ({education}) => (
     <H2>Education</H2>
     <Divider />
     <div>
-      {education.map(school => (
-        <EducationEntry {...school} />
+      {education.map((school, index) => (
+        <EducationEntry key={`education-${index}`} {...school} />
       ))}
     </div>
   </ColumnCard>

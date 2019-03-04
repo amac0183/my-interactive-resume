@@ -9,14 +9,14 @@ const EmptyStar = styled.span`
 `;
 
 const createMeter = (level) => {
-  const elems = _.range(level).map(() => (
-    <i class='material-icons'>grade</i>
+  const elems = _.range(level).map((index) => (
+    <i key={`star-rating-${index}`} class='material-icons'>grade</i>
   ));
 
   const diff = MAX_RATING - level;
   if(diff > 0) {
     _.forEach(_.range(diff), (index) => {
-      elems.push(<EmptyStar><i class='material-icons disabled'>grade</i></EmptyStar>);
+      elems.push(<EmptyStar key={`empty-star-${index}`}><i class='material-icons disabled'>grade</i></EmptyStar>);
     });
   }
 

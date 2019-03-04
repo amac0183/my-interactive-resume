@@ -10,8 +10,8 @@ export const ExperienceCard = ({work}) => (
     <H2>Work Experience</H2>
     <Divider />
     <div>
-      {work.map(experience => (
-        <ExperienceEntry {...experience} />
+      {work.map((experience, index) => (
+        <ExperienceEntry key={`experience-${index}`} {...experience} />
       ))}
     </div>
   </ColumnCard>

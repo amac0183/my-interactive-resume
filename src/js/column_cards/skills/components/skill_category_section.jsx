@@ -32,8 +32,8 @@ export const SkillCategorySection = ({skillTypes, title}) => (
       <Table>
         <tbody>
           {
-            skillTypes.map((type) => (
-              <tr>
+            skillTypes.map((type, index) => (
+              <tr key={`skill-row-${index}`}>
                 <NameTD><H5 inverted>{type.name}</H5></NameTD>
                 <RatingTD>
                   <SkillLevelMeter level={type.level || 1} />
