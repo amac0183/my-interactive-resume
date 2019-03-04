@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {BioContainer} from './components/bio_container';
+import {CardTitle} from '../../components/card_title';
 import {ColumnCard} from '../../components/column_card';
 import {ContactLink} from './components/contact_link';
 import {ContactLinksContainer} from './components/contact_links_container';
 import {DetailsContainer} from './components/details_container';
 import {Divider} from '../../components/divider';
-import {H2} from '../../components/h2';
 import {Location} from '../../components/location';
 import {P} from '../../components/paragraph';
 import {PhotoContainer} from './components/photo_container';
@@ -15,8 +15,7 @@ import profile from '../../../img/profile.jpg';
 
 export const ProfileCard = ({bio, location}) => (
   <ColumnCard backgroundColor='#544b47'>
-    <H2 inverted>Profile</H2>
-    <Divider inverted />
+    <CardTitle inverted title='Profile' />
     <PhotoContainer>
       <PhotoImg src={profile} />
     </PhotoContainer>
