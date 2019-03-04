@@ -10,15 +10,15 @@ const Container = styled.div`
 const Divider = styled.div`
   background-color: ${props => props.inverted ? 'white' : 'black'};
   height: 0.425rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.6rem;
   margin-top: 0.2rem;
   width: 100%
 `;
 
 export const CardTitle = ({inverted, title}) => (
   <Container>
-    <H2 inverted>Profile</H2>
-    <Divider inverted />
+    <H2 inverted={inverted}>{title}</H2>
+    <Divider inverted={inverted} />
   </Container>
 );
 
