@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {Background} from './components/background';
+import {CardsContainer} from './components/cards_container';
 import {Cover} from './sections/cover/index';
 import {EducationCard} from './column_cards/education';
 import {ExperienceCard} from './column_cards/experience';
@@ -16,12 +17,12 @@ const Index = () => {
   return (
     <Background>
       <Cover {...DATA.cover} />
-      <div className='column-card-container'>
+      <CardsContainer>
         <ProfileCard {...DATA.profile} />
         <ExperienceCard {...DATA.experiences} />
         <EducationCard {...DATA.experiences} />
         <SkillsCard {...DATA.skills} />
-      </div>
+      </CardsContainer>
     </Background>
   )
 };
