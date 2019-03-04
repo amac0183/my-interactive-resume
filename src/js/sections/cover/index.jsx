@@ -19,8 +19,8 @@ export const Cover = ({name, title}) => {
       <TopContainer />
       <MiddleContainer>
         <TitleContainer>
-          <H1>{name}</H1>
-          <H3>{title}</H3>
+          <H1 inverted>{name}</H1>
+          <H3 inverted>{title}</H3>
         </TitleContainer>
       </MiddleContainer>
       <BottomnContainer />
