@@ -15,7 +15,7 @@ module.exports = merge(common, {
             loader: 'babel-loader'
           },
           {
-            loader: 'linaria/loader',
+            loader: 'linaria/loader'
           }
         ]
       },

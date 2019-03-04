@@ -7,7 +7,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
             // fallback to style-loader in development
             {
@@ -21,9 +21,14 @@ module.exports = merge(common, {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        use: [
+          {
+            loader: 'babel-loader'
+          },
+          {
+            loader: 'linaria/loader'
+          }
+        ]
       },
       {
         test: /\.jpg$/,
@@ -38,5 +43,8 @@ module.exports = merge(common, {
         filename: "[name].css",
         chunkFilename: "[id].css"
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
 });
