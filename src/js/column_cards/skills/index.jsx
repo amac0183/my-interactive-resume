@@ -19,10 +19,6 @@ export const SkillsCard = ({databases, javascriptLibraries, languages, tools}) =
   </ColumnCard>
 );
 
-SkillsCard.defaultProps = {
-  work: []
-};
-
 SkillsCard.propTypes = {
   databases: PropTypes.array.isRequired,
   javascriptLibraries: PropTypes.array.isRequired,

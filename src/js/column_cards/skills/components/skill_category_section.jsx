@@ -6,7 +6,7 @@ import {H3} from '../../../components/h3';
 import {H5} from '../../../components/h5';
 
 export const Container = styled.div`
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.25rem;
   width: 100%;
 `;
 
