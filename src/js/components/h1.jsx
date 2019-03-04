@@ -1,6 +1,8 @@
+import {PropTypes} from 'prop-types'
 import {styled} from 'linaria/react';
 
 export const H1 = styled.h1`
+  color: ${props => props.inverted ? 'white' : 'black'};
   font-family: Montserrat;
   font-size: 42pt;
   font-weight: bold;
@@ -10,3 +12,11 @@ export const H1 = styled.h1`
     font-size: 24pt;
   }
 `;
+
+H1.defaultProps = {
+  inverted: false
+};
+
+H1.propTypes = {
+  inverted: PropTypes.bool.isRequired
+};
