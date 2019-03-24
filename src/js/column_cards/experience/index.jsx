@@ -5,7 +5,7 @@ import {ColumnCard} from '../../components/column_card';
 import {ExperienceEntry} from './components/experience_entry';
 
 export const ExperienceCard = ({work}) => (
-  <ColumnCard>
+  <ColumnCard backgroundColor='#F3C747'>
     <CardTitle title='Work Experience' />
     <div>
       {work.map((experience, index) => (

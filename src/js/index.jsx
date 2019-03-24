@@ -19,9 +19,9 @@ const Index = () => {
       <MainTitle {...DATA.cover} />
       <CardsContainer>
         <ProfileCard {...DATA.profile} />
+        <SkillsCard {...DATA.skills} />
         <ExperienceCard {...DATA.experiences} />
         <EducationCard {...DATA.experiences} />
-        <SkillsCard {...DATA.skills} />
       </CardsContainer>
     </Background>
   )
