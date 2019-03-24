@@ -6,7 +6,7 @@ const CardContainer = styled.div`
   background-color: ${props => props.backgroundColor};
   max-width: 25.938rem;
   min-height: 50rem;
-  min-width: 25rem;
+  width: 100%;
   padding: 0.938rem;
 `;
 

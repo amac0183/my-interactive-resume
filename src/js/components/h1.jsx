@@ -8,8 +8,8 @@ export const H1 = styled.h1`
   font-weight: bold;
   margin: 0px;
 
-  @media (max-width: 500px) {
-    font-size: 24pt;
+  @media only screen and (max-width: 500px) {
+    font-size: 18pt;
   }
 `;
 
