@@ -2,9 +2,9 @@ import {styled} from 'linaria/react';
 
 export const TopContainer = styled.div`
   background-color: white;
-  height: 8rem;
+  height: 3rem;
 
   @media (max-width: 500px) {
-    height: 3rem;
+    height: 1.5rem;
   }
 `;

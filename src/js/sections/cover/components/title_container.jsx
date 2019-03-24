@@ -2,11 +2,11 @@ import {styled} from 'linaria/react';
 
 export const TitleContainer = styled.div`
   color: white;
-  margin-top: 8rem;
+  margin-top: 2rem;
   text-align: center;
   width: 100%;
 
   @media (max-width: 500px) {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
   }
 `;
