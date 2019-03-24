@@ -8,6 +8,10 @@ const CardContainer = styled.div`
   min-height: 50rem;
   width: 100%;
   padding: 0.938rem;
+
+  @media only screen and (max-width: 500px) {
+    min-height: 10rem;
+  }
 `;
 
 export const ColumnCard = ({backgroundColor, children}) => (

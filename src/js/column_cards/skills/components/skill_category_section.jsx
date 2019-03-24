@@ -36,7 +36,9 @@ export const SkillCategorySection = ({skillTypes, title}) => (
               <tr key={`skill-row-${index}`}>
                 <NameTD><H5 inverted>{type.name}</H5></NameTD>
                 <RatingTD>
-                  <SkillLevelMeter level={type.level || 1} />
+                  <H5 inverted>
+                    <SkillLevelMeter level={type.level || 1} />
+                  </H5>
                 </RatingTD>
               </tr>
             ))
