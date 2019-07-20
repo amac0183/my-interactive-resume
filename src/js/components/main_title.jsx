@@ -43,6 +43,12 @@ export const TopContainer = styled.div`
   }
 `;
 
+export const CoverContainer = styled.div`
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
+
 /**
  * Main title component
  * @param {string} name 
@@ -50,7 +56,7 @@ export const TopContainer = styled.div`
  */
 export const MainTitle = ({name, title}) => {
   return (
-    <div id='cover'>
+    <CoverContainer id='cover'>
       <TopContainer />
       <MiddleContainer>
         <TitleContainer>
@@ -59,7 +65,7 @@ export const MainTitle = ({name, title}) => {
         </TitleContainer>
       </MiddleContainer>
       <BottomnContainer />
-    </div>
+    </CoverContainer>
   );
 }
 

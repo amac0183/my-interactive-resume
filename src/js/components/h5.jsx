@@ -9,7 +9,7 @@ export const H5 = styled.h5`
   margin: 0px;
 
   @media (max-width: 500px) {
-    font-size: 8pt;
+    font-size: 12pt;
   }
 `;
 

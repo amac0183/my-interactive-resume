@@ -9,7 +9,7 @@ export const H3 = styled.h3`
   margin: 0px;
 
   @media (max-width: 500px) {
-    font-size: 10pt;
+    font-size: 20pt;
   }
 `;
 

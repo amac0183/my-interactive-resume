@@ -21,7 +21,7 @@ export const ProfileCard = ({bio, location}) => (
     </PhotoContainer>
     <Divider inverted />
     <BioContainer>
-    <P inverted>{bio}</P>
+      <P inverted>{bio}</P>
     </BioContainer>
     <Divider inverted />
     <DetailsContainer>

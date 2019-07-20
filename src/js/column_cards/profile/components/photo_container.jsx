@@ -4,7 +4,7 @@ export const PhotoContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 1.875rem;
-  margin-top: 1.875rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   width: 100%;
 `;

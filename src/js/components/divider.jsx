@@ -7,6 +7,10 @@ export const Divider = styled.div`
   margin-bottom: 0.2rem;
   margin-top: 0.2rem;
   width: 100%
+  
+  @media only screen and (max-width: 500px) {
+    height: 0.2rem;
+  }
 `;
 
 Divider.defaultProps = {

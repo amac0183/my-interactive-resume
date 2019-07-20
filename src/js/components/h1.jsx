@@ -9,7 +9,7 @@ export const H1 = styled.h1`
   margin: 0px;
 
   @media only screen and (max-width: 500px) {
-    font-size: 18pt;
+    font-size: 36pt;
   }
 `;
 
