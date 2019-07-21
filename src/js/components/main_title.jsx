@@ -7,40 +7,24 @@ import {H3} from './h3';
 
 export const BottomnContainer = styled.div`
   background-color: white;
-  height: 5rem;
-
-  @media (max-width: 500px) {
-    height: 3rem;
-  }
+  height: 10rem;
 `;
 
 export const MiddleContainer = styled.div`
   background-color: transparent;
-  height: 8rem;
-
-  @media (max-width: 500px) {
-    height: 4rem;
-  }
+  height: 20rem;
 `;
 
 export const TitleContainer = styled.div`
   color: white;
-  margin-top: 2rem;
+  margin-top: 6rem;
   text-align: center;
   width: 100%;
-
-  @media (max-width: 500px) {
-    margin-top: 0.5rem;
-  }
 `;
 
 export const TopContainer = styled.div`
   background-color: white;
-  height: 3rem;
-
-  @media (max-width: 500px) {
-    height: 1.5rem;
-  }
+  height: 10rem;
 `;
 
 export const CoverContainer = styled.div`
